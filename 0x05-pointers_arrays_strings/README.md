@@ -1,1 +1,2 @@
-srtings arraysand pointers
+srtings arrays and pointers
+
