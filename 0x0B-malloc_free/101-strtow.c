@@ -10,13 +10,13 @@
  */
 void ch_free_grid(char **grid, unsigned int height)
 {
-  if (grid != NULL && height != 0)
-    {
-      for (; height > 0; height--)
-	free(grid[height]);
-      free(grid[height]);
-      free(grid);
-    }
+if (grid != NULL && height != 0)
+{
+for (; height > 0; height--)
+free(grid[height]);
+free(grid[height]);
+free(grid);
+}
 }
 
 /**
@@ -40,7 +40,7 @@ if (aout == NULL || height == 0)
 {
 free(aout);
 return (NULL);
- 
+}
 for (i = a1 = 0; i < height; i++)
 {
 for (c = a1; str[c] != '\0'; c++)
@@ -65,4 +65,3 @@ aout[i][j] = '\0';
 aout[i] = NULL;
 return (aout);
 }
- 
